@@ -1,0 +1,91 @@
+@import '../../braga/variables.module';
+
+.form__container {
+  width: 100%;
+  
+  .form__Full_line {
+    width: 100%;
+    .form__labelContainer {
+      float: left;
+      width: 20%;
+      text-align: right;
+      overflow: hidden;
+    }
+    .form__inputContainer {
+      float: left;
+      width: 80%;
+      overflow: hidden;
+    }
+    .form__inputCheckboxContainer {
+      overflow: hidden;
+      padding: 6px 0;
+      input[type=checkbox] {
+        border-radius: 4px;
+        border: 1px solid $color_gray_area;
+        height: 20px;
+        float: left;
+        width: 20px;
+        margin-left: 0px;
+        overflow: hidden;
+      }
+      input[type=checkbox] ~ label {
+        font-size: 14px;
+        margin-top: 7px;
+        float: left;
+        margin-right: 30px;
+        margin-left: 5px;
+        overflow: hidden;
+      }
+    }
+    input, input[type=text], select {
+      border-radius: 4px;
+      border: 1px solid $color_gray_area;
+      padding: 10px 15px;
+      outline: 0 none;
+      font-size: 14px;
+      box-sizing: border-box;
+      width: 100%;
+      background-color: transparent;
+    }
+    label {
+      margin-right: 30px;
+      font-size: 14px;
+      font-weight: 400;
+      i {
+        color: $color_red_default;
+        margin-right: 5px;
+      }
+    }
+    .form__half_line {
+      width: 50%;
+      .form__labelContainer {
+        width: 40%;
+        padding-top: 11px;
+      }
+      .form__inputContainer {
+        float: left;
+        width: 60%;
+        overflow: hidden;
+      }
+    }
+    .form__small_line {
+      width: 50%;
+      float: left;
+      overflow: hidden;
+      .form__labelContainer {
+        width: 80%;
+        padding-top: 11px;
+      }
+      .form__inputContainer {
+        float: left;
+        width: 20%;
+        overflow: hidden;
+      }
+    }
+  }
+  .form__Full_line, .form__Half_line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+}

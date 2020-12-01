@@ -1,0 +1,27 @@
+@import '../../braga/variables.module';
+
+.footer {
+  overflow: hidden;
+  margin-top: 110px;
+}
+.footer__container {
+  width: 100%;
+}
+.footer__item {
+  float: left;
+  margin-right: 30px;
+  font-size: 12px;
+  border-radius: 4px;
+  color: $color_black_text;
+  transition: background .255s;
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: $color_gray_markup;
+    opacity: .8;
+  }
+  &:last-child{
+    float: right;
+    margin-right: 0;
+  }
+}

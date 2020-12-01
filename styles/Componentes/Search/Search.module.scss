@@ -1,0 +1,32 @@
+@import '../../braga/variables.module';
+
+.search__container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  input[type=text]{
+    border-radius: 4px;
+    border: 0 none;
+    padding: 10px 15px;
+    outline: 0 none;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 80%;
+    background-color: transparent;
+    letter-spacing: 1px;
+    float: left;
+    &::-webkit-input-placeholder { /* Edge */
+      color: $color_gray_area;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: $color_gray_area;
+    }
+    &::placeholder {
+      color: $color_gray_area;
+    }
+  }
+  .search__icon {
+    float: left;
+    color: $color_gray_area;
+  }
+}
