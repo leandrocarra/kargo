@@ -4,9 +4,14 @@ import Button from '../../styles/braga/_buttons.module.scss';
 import Search from '../Search';
 import BoxContent from '../BoxContent';
 import Footer from '../Footer';
-import { DestinyForm, DataProduct }  from '../Forms/index';
+// import { DestinyForm, DataProduct }  from '../Forms/index';
+import { DestinyForm, DataProduct } from '../Forms/index';
 
-function ContentArea() {
+
+
+
+const ContentArea = () => {
+  
   return (
     <>
       <div className={Styles.contentArea__top}>
@@ -16,12 +21,9 @@ function ContentArea() {
         <BoxContent title="Destinatário">
           <DestinyForm />
         </BoxContent>
-        <BoxContent title="dados da mercadoria">
-          <DataProduct />
-        </BoxContent>
-        <div className={Styles.contentArea__bottomContent}>
-          <button className={Button.button__success}>Criar</button>
-        </div>
+        {/* <BoxContent title="dados da mercadoria">
+          <DataProduct/>
+        </BoxContent> */}
         <Footer />
       </div>
     </>
