@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Register from '../components/Register'
 import axios from 'axios';
 function Home() {
   const URL = 'http://44.241.150.240/tracking/5fc81c203dbc1b04c22bec10'
@@ -10,13 +11,13 @@ function Home() {
       'Access-Control-Allow-Methods':'GET,PUT,POST,DELETE,PATCH,OPTIONS',
       }
   });
-  const teste = () => {
-    api.get()
-        .then((response) => console.log(response.data))
-        .catch((err) => {
-          console.error("ops! ocorreu um erro" + err);
-      });
-  }
+const teste = () => {
+  api.get()
+      .then((response) => console.log(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+     });
+}
 
   return (
     <>
@@ -26,6 +27,7 @@ function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
       </Head>
       <button onClick={teste}>reer</button>
+      <Register />
     </>
   )
 }
