@@ -224,7 +224,7 @@ import Button from '../../styles/braga/_buttons.module.scss';
           </div>
         </div>
         <div className={Styles.form__bottomContent}>
-          <button className={Button.button__success} type="submit" onClick={teste}>Criar</button>
+          <button className={Button.button__success} type="submit">Criar</button>
         </div>
       </Form>
     </Formik>
