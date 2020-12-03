@@ -1,8 +1,10 @@
+import axios from 'axios';
 import * as Yup from 'yup';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 
 import Styles from '../../styles/Componentes/Forms/Destiny.module.scss';
 import Button from '../../styles/braga/_buttons.module.scss';
+
 
  export const DestinyForm = () => {
   return (
@@ -222,7 +224,7 @@ import Button from '../../styles/braga/_buttons.module.scss';
           </div>
         </div>
         <div className={Styles.form__bottomContent}>
-          <button className={Button.button__success} type="submit">Criar</button>
+          <button className={Button.button__success} type="submit" onClick={teste}>Criar</button>
         </div>
       </Form>
     </Formik>
