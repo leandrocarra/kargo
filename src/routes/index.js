@@ -18,8 +18,6 @@ export default function Routes() {
 
       <Route path="/metricas" component={Metrics} isPrivate />
       <Route path="/tracking" component={Tracking} isPrivate />
-
-      <Route path="/" component={() => <h1>404</h1>} />
     </Switch>
   );
 }
