@@ -7,8 +7,8 @@ import {
   yellow_markup
 } from '../../../styles/Colors';
 
-export const StatusBoxContainer = styled.section`
-  margin-bottom: 30px;
+export const StatusBoxContainer = styled.div`
+  margin-bottom: 5px;
   clear: both;
   ul {
     overflow: hidden;
@@ -18,7 +18,7 @@ export const StatusBoxContainer = styled.section`
     color: ${white};
     font-weight: 700;
     font-size: 14px;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.25));
   }
   .pendente {
     background-color: ${yellow_markup};

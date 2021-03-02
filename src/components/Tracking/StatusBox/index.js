@@ -3,6 +3,7 @@ import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
 
 import {StatusBoxContainer, StatusBoxSpot, StatusBoxSpotCheck} from './styles';
+import { useTagToPrint } from '~/hooks/useTags';
 
 function StatusBox({
   status,
@@ -14,17 +15,24 @@ function StatusBox({
   atualizado,
 }) {
   const [ isChecked, setIsChecked ] = useState(false);
-  const handleCheckBox = () => (
+  const { addTag, deleteTag } = useTagToPrint();
+
+  const handleCheckBox = () => {
     setIsChecked(!isChecked)
-  );
+    if (!isChecked) {
+      addTag(numeroGuia)
+    } else {
+      deleteTag(numeroGuia)
+    }
+  };
   return (
     <StatusBoxContainer>
-      <ul className={status} onClick={handleCheckBox}>
-        <StatusBoxSpotCheck>
+      <ul className={status}>
+        <StatusBoxSpotCheck onClick={handleCheckBox}>
           {isChecked 
             ? <CheckBoxIcon />
             : <CheckBoxOutlineBlankIcon />
-          } 
+          }
         </StatusBoxSpotCheck>
         <StatusBoxSpot>{numeroGuia}</StatusBoxSpot>
         <StatusBoxSpot>{refCliente}</StatusBoxSpot>

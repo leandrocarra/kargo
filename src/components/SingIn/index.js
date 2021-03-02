@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import * as Yup from 'yup';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
@@ -16,6 +16,7 @@ import {ButtonAction} from '~/components/Buttons/styles';
 
 function SingIn() {
   const dispatch = useDispatch();
+  const loading = useSelector(state => state.auth.loading);
 
   return (
     <BoxContentCenter>
@@ -51,7 +52,12 @@ function SingIn() {
             </FormInputContainerFull>
           </FormFullLine>
           <SingInContainerButton>
-            <ButtonAction type="submit">Acessar</ButtonAction>
+            <ButtonAction type="submit">
+              {loading
+                ? 'Carregando ...'
+                : 'Acessar'
+              }
+        </ButtonAction>
             <SingInWithOutAccess href="#">não consigo acessar</SingInWithOutAccess>
           </SingInContainerButton>
         </Form>

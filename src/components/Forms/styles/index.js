@@ -67,6 +67,13 @@ export const FormLabelContainer = styled.div`
   overflow: hidden;
 `;
 
+export const FormFeaturedArea = styled.div`
+  background-color: rgba(196, 196, 196, .15);
+  padding: 20px 20px 1px 20px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+`;
+
 export const FormInputContainer = styled.div`
  float: left;
   width: 80%;
@@ -94,6 +101,22 @@ export const FormInputContainerFull = styled(FormInputContainer)`
     top: 10px;
     svg {
       color: rgba(0,0,0, .3)
+    }
+  }
+`;
+
+export const FormContainerSuplier = styled(FormContainer)`
+  padding-bottom: 30px;
+  ${FormFullLine} {
+    margin-bottom: 0px;
+  }
+  ${FormInputContainer} {
+    background-color: #FFF;
+    position: relative;
+    svg {
+      position: absolute;
+      right: 10px;
+      top: 10px;
     }
   }
 `;

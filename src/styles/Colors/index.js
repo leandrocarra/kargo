@@ -9,6 +9,8 @@ export const white              = '#FFF';
 export const gray_markup        = '#F5F5F5';
 export const gray_area          = '#D9D9D9';
 export const gray_text          = '#A5A7B2';
+export const gray_line          = '#EBEDF2';
+export const gray_content       = '#C4C4C4';
 
 export const black_text         = '#404040';
 

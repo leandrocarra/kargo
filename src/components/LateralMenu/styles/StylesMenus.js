@@ -37,10 +37,14 @@ export const MenuIcon = styled.i`
 
 export const MenuTextItem = styled.p`
   letter-spacing: 1px;
+    & a {
+      color: ${blue_feature};
+    }
 `;
 
 export const MenuLaterals = styled.div`
   padding: 0 20px;
   height: 100%;
+  position: relative;
 `;
 

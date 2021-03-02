@@ -54,3 +54,49 @@ export const ButtonAction = styled(Button)`
     border-color: ${green_effect_three};
   }
 `;
+
+export const ButtonActionWithIcon = styled(Button)`
+  color: ${white};
+  background-color: #5D92F4;
+  width: 80%;
+  font-weight: 400;
+  margin: 0 auto;
+  svg {
+    margin-right: 5px;
+  }
+  &:hover {
+    background-color: rgb(65, 102, 170);
+    border-color: ${green_effect_three};
+  }
+`;
+
+export const ButtonActionSmall = styled(Button)`
+  color: ${white};
+  background-color: #5D92F4;
+  width: 20%;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  float: right;
+  &:hover {
+    background-color: rgb(65, 102, 170);
+    border-color: ${green_effect_three};
+  }
+`;
+
+export const ButtonActionWithIconSmall = styled(Button)`
+  height: 40px;
+  color: ${white};
+  background-color: #5D92F4;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 400;
+  margin: 0 auto;
+  svg {
+    margin-right: 5px;
+  }
+  &:hover {
+    background-color: rgb(65, 102, 170);
+    border-color: ${green_effect_three};
+  }
+`;

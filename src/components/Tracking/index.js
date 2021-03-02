@@ -1,20 +1,27 @@
 import React from 'react';
-
+import TagToPrintContext from '~/hooks/useTags';
 import BoxContent from '~/components/BoxContent';
 import Header from '~/components/Tracking/Header';
 import StatusBox from '~/components/Tracking/StatusBox';
+import FloatableTag from '~/components/Tracking/FloatableTag';
+import FilterTracking from '~/components/FilterTracking/';
+import Accordion from '~/components/Accordion';
 
 import { ContainerTracking } from './styles';
-// import {ButtonAction} from '~/components/Buttons/styles';
 
 function Tracking() {
   return (
-    <BoxContent title={'GUIAS DE TRANSPORTES'}>
+    <TagToPrintContext>
+      <Accordion title='FILTRAR ENTREGAS'>
+        <FilterTracking />
+      </Accordion>
+      <BoxContent title='GUIAS DE TRANSPORTES'>
+      <FloatableTag/>
       <ContainerTracking>
         <Header/>
         <StatusBox
           status='atrasado'
-          numeroGuia='12345678'
+          numeroGuia='aaaaa'
           refCliente='ENK K 1234567'
           refExterna='1234556677'
           destinatario='Pedro dias da silva'
@@ -23,7 +30,7 @@ function Tracking() {
         />
         <StatusBox
           status='pendente'
-          numeroGuia='12345678'
+          numeroGuia='bbbbb'
           refCliente='ENK K 1234567'
           refExterna='1234556677'
           destinatario='Pedro dias da silva'
@@ -60,6 +67,7 @@ function Tracking() {
         
       </ContainerTracking>
     </BoxContent>
+    </TagToPrintContext>
   )
 }
 

@@ -17,13 +17,13 @@ export function* signIn({ payload }) {
 
     const { token, user } = response.data;
 
-    //api.defaults.headers.Authorization = `Bearer ${token}`;
+    api.defaults.headers.Authorization = `Bearer ${token}`;
 
     yield put(signInSuccess(token, user));
 
     history.push('/registro-de-pacote');
   } catch (err) {
-    toast.error('Falha na autenticação, verifique seus dados');
+    toast.error('Revise seu email ou senha, parecem estar diferentes');
     yield put(signFailure());
   }
 }
