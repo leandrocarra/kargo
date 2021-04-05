@@ -4,13 +4,14 @@ import {white, blue_area} from '../../../styles/Colors';
 export const TopWrapper = styled.div`
   height: 72px;
   background-color: ${blue_area};
-  padding: 0 20px;
+  padding: 0 0 0 20px;
 `;
 
 export const TopIcon = styled.div`
   float: left;
-  margin-right: 20px;
+  margin-left: 39px;
   margin-top: 25px;
+  cursor: pointer;
 `;
 
 export const TopMark = styled.div`

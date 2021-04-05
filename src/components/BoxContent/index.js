@@ -22,3 +22,11 @@ export function BoxContentCenter({ children }) {
     </BoxContainerCenter>
   );
 }
+
+export function BoxContentEmpty({ children }) {
+  return (
+    <BoxContainer> 
+      {children}
+    </BoxContainer>
+  );
+}

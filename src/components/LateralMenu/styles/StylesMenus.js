@@ -28,6 +28,9 @@ export const MenuItem = styled.li`
     padding-left: 30px;
     width: 260px;
     color: ${yellow_markup};
+    a {
+      color: ${yellow_markup};
+    }
   }
 `;
 

@@ -15,7 +15,7 @@ export const ContentHeader = styled.ul`
 `;
 
 export const ItemHeader = styled.li`
-  width: 13.5%;
+  width: 15%;
   height: 40px;
   display: flex;
   justify-content: center; 
@@ -27,7 +27,7 @@ export const ItemHeader = styled.li`
 `;
 
 export const ItemHeaderSpecial = styled.li`
-  width: 4%;
+  width: 7%;
   height: 40px;
   display: flex;
   justify-content: left; 

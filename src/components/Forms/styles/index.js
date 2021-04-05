@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { gray_area } from '../../../styles/Colors';
+import { gray_area, black_text, blue_default } from '../../../styles/Colors';
 
 export const FormContainer = styled.div`
   width: 100%;
@@ -67,12 +67,6 @@ export const FormLabelContainer = styled.div`
   overflow: hidden;
 `;
 
-export const FormFeaturedArea = styled.div`
-  background-color: rgba(196, 196, 196, .15);
-  padding: 20px 20px 1px 20px;
-  margin-bottom: 20px;
-  border-radius: 7px;
-`;
 
 export const FormInputContainer = styled.div`
  float: left;
@@ -165,3 +159,39 @@ export const FormBottomContent = styled.div`
   margin-top: 60px;
 `;
 
+export const FormFeaturedArea = styled.div`
+  /* background-color: rgba(196, 196, 196, .15); */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  ${FormInputContainer} {
+    overflow: inherit;
+    margin-top: 5px;
+  }
+  input {
+    border: 0 !important;
+  }
+  span {
+    position: inherit !important;
+    bottom: 0 !important;
+    color: ${black_text} !important;
+    svg {
+      position: inherit !important;
+      top: -2px !important;
+      right: 0 !important;
+    }
+  }
+`;
+
+export const DisclaimerPeriod = styled.div`
+  float: left;
+  margin-left: 9.5%;
+  color: ${black_text}; 
+  h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  span {
+    color: ${blue_default}
+  }
+`;

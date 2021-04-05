@@ -1,4 +1,7 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+
+import { destinyForm } from '~/store/modules/form/actions';
 
 import * as Yup from 'yup';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
@@ -9,6 +12,8 @@ import * as Styles from '../styles';
 import {ButtonSuccess} from '~/components/Buttons/styles'
 
 const DestinyForm = () => {
+  const dispatch = useDispatch();
+
   return (
     <BoxContent>
       <Formik
@@ -19,7 +24,7 @@ const DestinyForm = () => {
           postalCode: '',
           email: '',
           local: '',
-          nif: '',
+          // nif: '',
           country: '',
           volume: '',
           reference: '',
@@ -32,25 +37,47 @@ const DestinyForm = () => {
           services: ''
         }}
         validationSchema={Yup.object({
-          name: Yup.string().required(),
-          morada: Yup.string().required(),
-          phone: Yup.string().required(),
-          postalCode: Yup.string().required(),
-          email: Yup.string().required(),
-          local: Yup.string().required(),
-          nif: Yup.string().required(),
-          country: Yup.string().required(),
-          volume: Yup.string().required(),
-          reference: Yup.string().required(),
-          product: Yup.string().required(),
-          weight:Yup.string().required(),
-          mercadoria: Yup.string().required(),
-          vol: Yup.string().required(),
-          declared: Yup.string().required(),
-          observation: Yup.string(),
+          // name: Yup.string().required(),
+          // morada: Yup.string().required(),
+          // phone: Yup.string().required(),
+          // postalCode: Yup.string().required(),
+          // email: Yup.string().required(),
+          // local: Yup.string().required(),
+          // nif: Yup.string().required(),
+          // country: Yup.string().required(),
+          // volume: Yup.string().required(),
+          // reference: Yup.string().required(),
+          // product: Yup.string().required(),
+          // weight:Yup.string().required(),
+          // mercadoria: Yup.string().required(),
+          // vol: Yup.string().required(),
+          // declared: Yup.string().required(),
+          // observation: Yup.string(),
         })}
-        onSubmit={(values) => {
-          console.log(JSON.stringify(values, null, 2));
+        onSubmit={ async values  => {
+          
+          const payload = {
+            name: values.name,
+            address: values.morada,
+            phone: values.phone,
+            zip_code: values.postalCode,
+            location: values.local,
+            country: values.country,
+            email: values.email,
+            merchandise: {
+              volumes: parseInt(values.volume),
+              internal_reference: values.reference,
+              product: values.product,
+              weight: parseInt(values.weight),
+              refund: parseInt(values.vol),
+              description: values.observation,
+              declared_value: parseInt(values.declared),
+            }
+          }
+
+          dispatch(destinyForm(payload))
+
+          // console.log(payload)
         }}
       >
         <Form>

@@ -21,4 +21,5 @@ export const WrapperRight = styled.section`
 
 export const ContentArea = styled.section`
   padding: 30px;
+  height: 100%;
 `;

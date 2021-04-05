@@ -24,30 +24,29 @@ function SingIn() {
       <SingInSubTitle>Bem vindo ao seu painel</SingInSubTitle>   
       <Formik
         initialValues={{
-          email: '',
+          user: '',
           password: ''
         }}
         validationSchema={Yup.object({
-          email: Yup.string().email('precisa ser um email valido').required(),
+          user: Yup.string('precisa ser um email valido').required(),
           password: Yup.string().required(),
         })}
-        onSubmit={({email, password}) => {
-          dispatch(signInRequest(email, password))
-          // console.log(JSON.stringify(values, null, 2));
+        onSubmit={({user, password}) => {
+          dispatch(signInRequest(user, password))
         }}
       >
         <Form>
           <FormFullLine>
             <FormInputContainerFull>
-              <ErrorMessage component="span" name="email" />
-              <Field name="email" type="email" placeholder="administrador@exemplo.pt" />
+              <ErrorMessage component="span" name="user" />
+              <Field name="user" type="email" placeholder="administrador@exemplo.pt" />
               <i><MailOutlineIcon/></i>
             </FormInputContainerFull>
           </FormFullLine>
           <FormFullLine>
             <FormInputContainerFull>
               <ErrorMessage component="span" name="password" />
-              <Field name="password" type="password" placeholder="*******" />
+              <Field name="password" type="text" placeholder="*******" />
               <i><LockOutlinedIcon/></i>
             </FormInputContainerFull>
           </FormFullLine>

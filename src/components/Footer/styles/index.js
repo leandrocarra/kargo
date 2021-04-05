@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
 export const FooterContent = styled.div`
-  overflow: hidden;
-  margin-top: 110px;
+  background-color: #FFF;
+  position: fixed;
+  width: 80vw;
+  bottom: 0;
+  padding: 0 30px;
+  z-index: 2;
 `;
 
 export const FooterContainer = styled.ul`

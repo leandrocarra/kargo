@@ -7,19 +7,25 @@ import api from '~/services/api';
 import { signInSuccess, signFailure } from './actions';
 
 export function* signIn({ payload }) {
-  try {
-    const { email, password } = payload;
 
-    const response = yield call(api.post, 'sessions', {
-      email,
+  try {
+    const { user, password } = payload;
+
+    const response = yield call(api.post, '/login/', {
+      user,
       password,
     });
 
-    const { token, user } = response.data;
+    const { jwt } = response.data;
 
-    api.defaults.headers.Authorization = `Bearer ${token}`;
+    api.defaults.headers={"x-kargo-token": `${jwt}`};
 
-    yield put(signInSuccess(token, user));
+    if ( jwt === undefined) {
+      yield put(signFailure());
+    }
+    if (jwt !== undefined ) {
+      yield put(signInSuccess(jwt, user));
+    }
 
     history.push('/registro-de-pacote');
   } catch (err) {
@@ -53,7 +59,7 @@ export function setToken({ payload }) {
   const { token } = payload.auth;
 
   if (token) {
-    api.defaults.headers.Authorization = `Bearer ${token}`;
+    api.defaults.headers={"x-kargo-token": `${token}`};
   }
 }
 

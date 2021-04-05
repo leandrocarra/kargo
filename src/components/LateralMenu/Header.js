@@ -9,7 +9,6 @@ function Header() {
   const [isShow, setIsShow] = useState(true)
 
   const handleShow = (isShow) => {
-    console.log('teste')
     setIsShow(!isShow)
   }
 

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {gray_area, gray_markup} from '../../../styles/Colors';
+import {gray_area, gray_markup, gray_line} from '../../../styles/Colors';
 
 export const SearchContainer = styled.div`
   background-color: ${gray_markup};
@@ -11,9 +11,12 @@ export const SearchContainer = styled.div`
 `;
 
 export const SearchContent = styled.div`
-  width: 80%;
+  width: 40%;
   display: flex;
   align-items: center;
+  border: 1px solid ${gray_line};
+  padding: 0 0 0 10px;
+  border-radius: 4px;
 `;
 
 export const Input = styled.input`
@@ -40,5 +43,5 @@ export const Input = styled.input`
 
 export const SearchIcon = styled.div`
   float: left;
-    color: ${gray_area};
+  color: ${gray_area};
 `;

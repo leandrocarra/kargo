@@ -26,7 +26,7 @@ export const StatusBoxContainer = styled.div`
   .atrasado {
     background-color: ${red_area};
   }
-  .em_rota {
+  .em_rota, .Planeado {
     background-color: ${blue_feature};
   }
   .finalizado {
@@ -35,7 +35,7 @@ export const StatusBoxContainer = styled.div`
 `;
 
 export const StatusBoxSpot = styled.li`
-  width: 13.5%;
+  width: 16%;
   height: 40px;
   display: flex;
   justify-content: center; 

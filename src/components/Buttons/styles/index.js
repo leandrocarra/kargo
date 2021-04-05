@@ -100,3 +100,56 @@ export const ButtonActionWithIconSmall = styled(Button)`
     border-color: ${green_effect_three};
   }
 `;
+
+export const ButtonActionWithIconSmallDark = styled(Button)`
+  height: 40px;
+  color: ${white};
+  background-color: #015EA2;
+  font-size: 14px;
+  width: 70%;
+  font-weight: 400;
+  margin: 0 auto;
+  svg {
+    margin-right: 5px;
+  }
+  &:hover {
+    background-color: rgb(65, 102, 170);
+    border-color: ${green_effect_three};
+  }
+`;
+
+export const ButtonActionOnlyIcon = styled(Button)`
+  height: 43px;
+  color: ${white};
+  background-color: #5D92F4;
+  font-size: 12px;
+  width: 12%;
+  font-weight: 400;
+  margin: 0 auto;
+  box-shadow: none;
+  margin-right: -2px;
+  position: relative;
+  top: -1px;
+  margin-bottom: -3px;
+  border-radius: 0 4px 4px 0;
+  &:hover {
+    background-color: rgb(65, 102, 170);
+    border-color: ${green_effect_three};
+  }
+`;
+
+export const ButtonCopy = styled(Button)`
+  height: 25px;
+  color: #2E9CC3;
+  background-color: #D0ECF5;
+  font-size: 12px;
+  width: 60px;
+  font-weight: 400;
+  margin: 0 auto;
+  box-shadow: none;
+  &:hover {
+    background-color: rgb(93, 146, 244);
+    border-color: ${green_effect_three};
+    color: #fff;
+  }
+`;
