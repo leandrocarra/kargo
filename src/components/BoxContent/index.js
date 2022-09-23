@@ -1,6 +1,11 @@
 import React from 'react';
 
-import {BoxContainer, BoxContainerCenter, BoxContentTitle} from './styles';
+import {
+  BoxContainer,
+  BoxContainerCenter,
+  BoxContentTitle,
+  HalfBoxContainer
+} from './styles';
 
 export default function BoxContent({ title, children }) {
   return (
@@ -28,5 +33,13 @@ export function BoxContentEmpty({ children }) {
     <BoxContainer> 
       {children}
     </BoxContainer>
+  );
+}
+
+export function HalfBoxContent({ children }) {
+  return (
+    <HalfBoxContainer> 
+      {children}
+    </HalfBoxContainer>
   );
 }

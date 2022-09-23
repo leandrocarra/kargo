@@ -56,8 +56,8 @@ function SingIn() {
                 ? 'Carregando ...'
                 : 'Acessar'
               }
-        </ButtonAction>
-            <SingInWithOutAccess href="#">não consigo acessar</SingInWithOutAccess>
+            </ButtonAction>
+            <SingInWithOutAccess href="/singup">Quero me cadastrar</SingInWithOutAccess>
           </SingInContainerButton>
         </Form>
       </Formik> 
