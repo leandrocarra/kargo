@@ -4,7 +4,15 @@ import {
   Receipt,
   ViewList,
   Assessment,
+  AccountBox,
+  SyncAlt,
+  LocalAtm,
+  Help,
+  ContactPhone,
+  LocalOffer,
+  Dashboard
 } from '@material-ui/icons/';
+
 import {Link} from "react-router-dom";
 
 import Header from './Header';
@@ -24,7 +32,7 @@ function Menus() {
       <Header />
       <MenuContainer>
         <MenuItem>
-          <MenuIcon><Receipt /></MenuIcon>
+          <MenuIcon><Dashboard /></MenuIcon>
           <MenuTextItem>
             <Link to="/dashboard">
               Dashboard
@@ -32,7 +40,7 @@ function Menus() {
           </MenuTextItem>
         </MenuItem>
         <MenuItem>
-          <MenuIcon><ViewList /></MenuIcon>
+          <MenuIcon><LocalOffer /></MenuIcon>
           <MenuTextItem>
             <Link to="/vendas">
               Vendas
@@ -40,7 +48,7 @@ function Menus() {
           </MenuTextItem>
         </MenuItem>
         <MenuItem>
-          <MenuIcon><Assessment /></MenuIcon>
+          <MenuIcon><LocalAtm /></MenuIcon>
           <MenuTextItem>
             <Link to="/financeiro">
               Financeiro
@@ -48,7 +56,7 @@ function Menus() {
           </MenuTextItem>
         </MenuItem>
         <MenuItem>
-          <MenuIcon><Assessment /></MenuIcon>
+          <MenuIcon><AccountBox /></MenuIcon>
           <MenuTextItem>
             <Link to="/profile">
               Perfil
@@ -56,7 +64,7 @@ function Menus() {
           </MenuTextItem>
         </MenuItem>
         <MenuItem>
-          <MenuIcon><Assessment /></MenuIcon>
+          <MenuIcon><SyncAlt /></MenuIcon>
           <MenuTextItem>
             <Link to="/integracao">
               Integração
@@ -72,7 +80,7 @@ function Menus() {
           </MenuTextItem>
         </MenuItem>
         <MenuItem>
-          <MenuIcon><Assessment /></MenuIcon>
+          <MenuIcon><Help /></MenuIcon>
           <MenuTextItem>
             <Link to="/ajuda">
               Ajuda
@@ -80,7 +88,7 @@ function Menus() {
           </MenuTextItem>
         </MenuItem>
         <MenuItem>
-          <MenuIcon><Assessment /></MenuIcon>
+          <MenuIcon><ContactPhone /></MenuIcon>
           <MenuTextItem>
             <Link to="/fale-conosco">
               Fale conosco
