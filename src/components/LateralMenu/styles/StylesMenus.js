@@ -1,5 +1,12 @@
 import styled from 'styled-components';
-import {black, yellow_markup, black_text, gray_step} from '../../../styles/Colors';
+import {
+  black,
+  yellow_markup,
+  black_text,
+  gray_step,
+  purple_rain,
+  purple_main
+} from '../../../styles/Colors';
 
 export const MenuContainer = styled.ul`
   padding-left: 10px;
@@ -15,13 +22,13 @@ export const MenuItem = styled.li`
   cursor: pointer;
   margin-left: 20px;
   &:hover {
-    background-color: rgba(0,0,0, .15);
+    background-color: ${purple_main};
     margin-left: -30px;
-    padding-left: 30px;
+    padding-left: 50px;
     width: 260px;
-    color: ${yellow_markup};
+    color: ${purple_rain};
     a {
-      color: ${yellow_markup};
+      color: ${purple_rain};
       
     }
   }

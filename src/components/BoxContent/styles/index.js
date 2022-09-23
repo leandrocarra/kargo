@@ -37,7 +37,7 @@ export const BoxContentTitle = styled.div`
 `;
 
 export const HalfBoxContainer = styled.div`
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+  //box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
   min-height: 30px;
   min-width: 30px;
   background-color: ${white};

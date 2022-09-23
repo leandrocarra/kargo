@@ -31,7 +31,7 @@ function Menus() {
   return (
     <MenuLaterals>
       <MenuContainer>
-        <MenuTitleRefer>Default</MenuTitleRefer>
+        <MenuTitleRefer>Principal</MenuTitleRefer>
         <MenuItem>
           <MenuIcon><Dashboard /></MenuIcon>
           <MenuTextItem>
