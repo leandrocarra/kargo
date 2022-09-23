@@ -10,6 +10,7 @@ export const blue_fit           = '#E3F2FD';
 export const yellow_markup      = '#FA8C15';
 
 export const white              = '#FFF';
+export const black              = '#000';
 
 export const gray_markup        = '#F5F5F5';
 export const gray_grade         = '#F2F2F2';

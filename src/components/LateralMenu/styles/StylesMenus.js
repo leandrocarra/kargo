@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import {blue_feature, yellow_markup, black_text} from '../../../styles/Colors';
+import {black, yellow_markup, black_text, gray_step} from '../../../styles/Colors';
 
 export const MenuContainer = styled.ul`
   padding-left: 10px;
-  font-weight: 700;
   font-size: 14px;
   color: ${black_text};
 `;
@@ -14,6 +13,7 @@ export const MenuItem = styled.li`
   height: 40px;
   position: relative;
   cursor: pointer;
+  margin-left: 20px;
   &:hover {
     background-color: rgba(0,0,0, .15);
     margin-left: -30px;
@@ -22,6 +22,7 @@ export const MenuItem = styled.li`
     color: ${yellow_markup};
     a {
       color: ${yellow_markup};
+      
     }
   }
 `;
@@ -42,4 +43,18 @@ export const MenuLaterals = styled.div`
   height: 100%;
   position: relative;
 `;
+
+export const MenuTitleRefer = styled.div`
+  color: ${black}; 
+  margin-bottom: 15px;
+  letter-spacing: 0
+  margin-top: 20px;
+`;
+
+export const MenuSeparator = styled.div`
+  border-bottom: 1px solid ${gray_step};
+  width: 100%;
+  margin: 5px;
+`;
+
 

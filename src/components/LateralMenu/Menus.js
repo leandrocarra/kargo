@@ -22,14 +22,16 @@ import {
   MenuItem,
   MenuIcon,
   MenuTextItem,
-  MenuLaterals
+  MenuLaterals,
+  MenuTitleRefer,
+  MenuSeparator
 } from './styles/StylesMenus';
 
 function Menus() {
   return (
     <MenuLaterals>
-      {/* <Header /> */}
       <MenuContainer>
+        <MenuTitleRefer>Default</MenuTitleRefer>
         <MenuItem>
           <MenuIcon><Dashboard /></MenuIcon>
           <MenuTextItem>
@@ -54,6 +56,8 @@ function Menus() {
             </Link>
           </MenuTextItem>
         </MenuItem>
+        <MenuSeparator></MenuSeparator>
+        <MenuTitleRefer>Widget</MenuTitleRefer>
         <MenuItem>
           <MenuIcon><AccountBox /></MenuIcon>
           <MenuTextItem>
@@ -78,6 +82,8 @@ function Menus() {
             </Link>
           </MenuTextItem>
         </MenuItem>
+        <MenuSeparator></MenuSeparator>
+        <MenuTitleRefer>Aplicação</MenuTitleRefer>
         <MenuItem>
           <MenuIcon><Help /></MenuIcon>
           <MenuTextItem>
