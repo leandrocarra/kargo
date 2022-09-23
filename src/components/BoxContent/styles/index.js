@@ -49,7 +49,5 @@ export const HalfBoxContainer = styled.div`
   margin: 0 2%;
   margin-bottom: 30px;
   float: left;
-
-  height: 300px;
   border: 1px solid rgba(144, 202, 249, 0.46);
 `;
