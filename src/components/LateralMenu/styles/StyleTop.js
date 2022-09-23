@@ -1,27 +1,21 @@
 import styled from 'styled-components';
-import {white, blue_area} from '../../../styles/Colors';
+import {white} from '../../../styles/Colors';
 
 export const TopWrapper = styled.div`
   height: 72px;
-  background-color: ${blue_area};
+  background-color: ${white};
   padding: 0 0 0 20px;
 `;
 
-export const TopIcon = styled.div`
+export const TopLogo = styled.i`
+  overflow: hidden;
   float: left;
-  margin-left: 39px;
-  margin-top: 25px;
-  cursor: pointer;
+  margin-top: 20px;
+  img {
+    float: left;
+    width: 100%;
+    max-width: 84px;
+    min-width: 53px;
+  }
 `;
 
-export const TopMark = styled.div`
-  float: left;
-  width: 165px;
-  height: 60px;
-  background-color: ${white};
-  border-radius: 0 0 10px 10px;
-  padding: 10px;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-`;

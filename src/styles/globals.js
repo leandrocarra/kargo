@@ -40,7 +40,7 @@ export default createGlobalStyle`
   }
   body {
     line-height: 1;
-    background-color: #f8f9fa;
+    
     -webkit-font-smoothing: antialiased;
   }
   body::-webkit-scrollbar {
@@ -51,7 +51,7 @@ export default createGlobalStyle`
     background-color: transparent;
   }
   body::-webkit-scrollbar-thumb {
-    background-color: #002447;
+    background-color: #e3f2fd;
   }
   table {
     border-collapse: collapse;

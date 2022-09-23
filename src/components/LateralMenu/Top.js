@@ -1,13 +1,15 @@
 import React from 'react';
 
-import {TopWrapper, TopMark } from './styles/StyleTop.js';
+import {TopWrapper, TopLogo } from './styles/StyleTop.js';
+import Logo from '../../assets/logoTaki.png';
 
 function Top() {
   return (
     <TopWrapper>
-      <TopMark>
-        img
-      </TopMark>
+      <TopLogo>
+        <img src={Logo} />
+      </TopLogo>
+      
     </TopWrapper>
   );
 }

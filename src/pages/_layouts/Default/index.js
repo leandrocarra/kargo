@@ -29,7 +29,7 @@ const useStyles = makeStyles({
       width: '260px',
     },
     '& $right': {
-      width: 'calc(100% - 260px)',
+       width: 'calc(100% - 260px)',
     }
   },
 });

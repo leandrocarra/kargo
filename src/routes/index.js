@@ -5,6 +5,7 @@ import Route from './Route';
 import SingIn from '../pages/SingIn';
 import SingUp from '../pages/SingUp';
 import Sales from '../pages/Sales';
+import Report from '../pages/Report';
 import Integrations from '../pages/Integrations';
 import Financial from '../pages/Financial';
 import RegisterPackage from '../pages/RegisterPackage';
@@ -29,6 +30,7 @@ export default function Routes() {
       <Route path="/integracao" component={Integrations} isPrivate />
       <Route path="/financeiro" component={Financial} isPrivate />
       <Route path="/Dashboard" component={Dashboard} isPrivate />
+      <Route path="/relatorio" component={Report} isPrivate />
       <Route path="/tracking" exact component={Tracking} isPrivate />
       <Route path="/ajuda" exact component={Help} isPrivate />
       <Route path="/fale-conosco" exact component={Contact} isPrivate />

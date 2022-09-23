@@ -15,10 +15,9 @@ import {
 
 import {Link} from "react-router-dom";
 
-import Header from './Header';
+// import Header from './Header';
 
 import {
-  MenuTitle,
   MenuContainer,
   MenuItem,
   MenuIcon,
@@ -29,7 +28,7 @@ import {
 function Menus() {
   return (
     <MenuLaterals>
-      <Header />
+      {/* <Header /> */}
       <MenuContainer>
         <MenuItem>
           <MenuIcon><Dashboard /></MenuIcon>
@@ -74,7 +73,7 @@ function Menus() {
         <MenuItem>
           <MenuIcon><Assessment /></MenuIcon>
           <MenuTextItem>
-            <Link to="/relatorios">
+            <Link to="/relatorio">
               Relatórios
             </Link>
           </MenuTextItem>
