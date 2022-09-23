@@ -1,13 +1,12 @@
 import styled from 'styled-components';
-import {gray_area, gray_markup, gray_line} from '../../../styles/Colors';
+import {gray_area, gray_markup, gray_line, white} from '../../../styles/Colors';
 
 export const SearchContainer = styled.div`
-  background-color: ${gray_markup};
+  background-color: ${white};
   height: 72px;
-  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
+  //box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.15);
   display: flex;
   align-items: center;
-  padding: 0 30px;
 `;
 
 export const SearchContent = styled.div`

@@ -7,7 +7,18 @@ import QuantitySelled from './quantitySelled'
 function Dashboard() {
   return (
     <>
-      <h2>Vendas On-line</h2>
+      <HalfBoxContent style={{height: '300px'}}>
+        <TotalOrder />
+      </HalfBoxContent>
+      <HalfBoxContent>
+        <QuantitySelled />
+      </HalfBoxContent>
+      <HalfBoxContent>
+        <TotalOrder />
+      </HalfBoxContent>
+      <HalfBoxContent>
+        <QuantitySelled />
+      </HalfBoxContent>
       <HalfBoxContent>
         <TotalOrder />
       </HalfBoxContent>

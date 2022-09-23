@@ -5,6 +5,7 @@ export const blue_feature       = '#038FDD';
 export const blue_ball          = '#015EA2';
 export const blue_hipe          = '#2E9CC3';
 export const blue_light         = '#D0ECF5';
+export const blue_fit           = '#E3F2FD';
 
 export const yellow_markup      = '#FA8C15';
 
@@ -20,7 +21,7 @@ export const gray_title         = '#999999';
 export const gray_step          = '#EEEEEE';
 export const gray_cb            = '#CBCBCB';
 
-export const black_text         = '#404040';
+export const black_text         = '#616161';
 
 export const red_default        = '#F5222D';
 export const red_area           = '#F44336';

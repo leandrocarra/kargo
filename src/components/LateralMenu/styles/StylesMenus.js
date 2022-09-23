@@ -1,19 +1,11 @@
 import styled from 'styled-components';
-import {blue_feature, yellow_markup} from '../../../styles/Colors';
-
-export const MenuTitle = styled.h3`
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  color: ${blue_feature};
-  margin-top: 30px;
-`;
+import {blue_feature, yellow_markup, black_text} from '../../../styles/Colors';
 
 export const MenuContainer = styled.ul`
   padding-left: 10px;
   font-weight: 700;
   font-size: 14px;
-  color: ${blue_feature};
+  color: ${black_text};
 `;
 
 export const MenuItem = styled.li`
@@ -41,12 +33,12 @@ export const MenuIcon = styled.i`
 export const MenuTextItem = styled.p`
   letter-spacing: 1px;
     & a {
-      color: ${blue_feature};
+      color: ${black_text};
     }
 `;
 
 export const MenuLaterals = styled.div`
-  padding: 0 20px;
+  padding: 30px 20px 0 20px;
   height: 100%;
   position: relative;
 `;
