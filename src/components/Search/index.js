@@ -29,7 +29,7 @@ const useStyles = makeStyles({
   },
   MenuIconCollapseToClose: {
     transition: 'all .5s ease-in-out',
-    transform: 'rotateY(0deg)',
+    //transform: 'rotateY(0deg)',
     color: '#FA8C15',
     transformStyle: 'preserve-3d',
     marginRight: '20px',
@@ -40,7 +40,7 @@ const useStyles = makeStyles({
     color: '#FA8C15',
     marginRight: '20px',
     cursor: 'pointer',
-    transform: 'rotateY(180deg)',
+    //transform: 'rotateY(180deg)',
     transformStyle: 'preserve-3d',
   },
   iconLogoff: {
@@ -75,14 +75,14 @@ function Search() {
 
   return (
     <SearchContainer>
-      <MenuCollaps
+      {/* <MenuCollaps
         className={
           collapseInDesktop
             ? `${classes.MenuIconCollapseToOpen}`
             : `${classes.MenuIconCollapseToClose}`
         }
         onClick={() => handleBtnCollapse()}
-      />
+      /> */}
       <SearchContent className={
         (inFocu || hasValue !== '')
           ? `${classes.withBorder}`
@@ -96,7 +96,7 @@ function Search() {
         <Input
           type='text'
           value={hasValue}
-          placeholder='Encontrar minha encomenda'
+          placeholder='procurar'
           onChange={handleChange}
           onFocus={() => setInFocu(true)}
           onBlur={() => setInFocu(false)}

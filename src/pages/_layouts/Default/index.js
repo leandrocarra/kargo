@@ -52,7 +52,7 @@ function LayoutDefault({ children }) {
         <ContentArea>
           {children}
         </ContentArea>
-        <Footer />
+        {/* <Footer /> */}
       </WrapperRight>
     </section>
   );

@@ -10,6 +10,7 @@ export const BoxContainer = styled.div`
   padding: 30px;
   width: 100%;
   margin-bottom: 30px;
+  border: 1px solid rgba(144, 202, 249, 0.46);
 `;
 
 export const BoxContainerCenter= styled.div`
@@ -27,6 +28,7 @@ export const BoxContainerCenter= styled.div`
   top: 50%;
   position: relative;
   margin-top: -235px;
+  border: 1px solid rgba(144, 202, 249, 0.46);
 `;
 
 export const BoxContentTitle = styled.div`
@@ -47,7 +49,6 @@ export const HalfBoxContainer = styled.div`
   margin: 0 2%;
   margin-bottom: 30px;
   float: left;
-  
 
   height: 300px;
   border: 1px solid rgba(144, 202, 249, 0.46);
