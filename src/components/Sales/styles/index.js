@@ -8,6 +8,7 @@ import {
 
 export const SalesListTitles = styled.div`
   overflow: hidden;
+  cursor: pointer;
   label {
     float: left;
     width: 11.1%;

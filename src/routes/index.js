@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { Switch } from 'react-router-dom';
 import Route from './Route';
 
@@ -14,6 +14,7 @@ import Dashboard from '../pages/Dashboard';
 import Tracking from '../pages/Tracking';
 import Help from '../pages/Help';
 import Contact from '../pages/Contact';
+import SalesDetail from '~/components/SalesDetail';
 import TrackingDetail from '~/components/TrackingDetail';
 import Profile from '../pages/Profile';
 
@@ -27,6 +28,7 @@ export default function Routes() {
       <Route path="/registro-de-pacote" component={RegisterPackage} isPrivate />
       <Route path="/metricas" component={Metrics} isPrivate />
       <Route path="/vendas" component={Sales} isPrivate />
+      <Route path="/vendas/detail/:id" component={SalesDetail} isPrivate />
       <Route path="/integracao" component={Integrations} isPrivate />
       <Route path="/financeiro" component={Financial} isPrivate />
       <Route path="/Dashboard" component={Dashboard} isPrivate />
