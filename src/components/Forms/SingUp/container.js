@@ -31,13 +31,34 @@ const DestinyForm = () => {
         })}
         onSubmit={ async values  => {
           
+          // const payload = {
+          //   name: values.name,
+          //   email: values.email,
+          //   pass: values.pass,
+          //   document_id: values.cpf,
+          // }
+
           const payload = {
-            name: values.name,
-            email: values.email,
-            pass: values.pass,
-            document_id: values.cpf,
+            email: "f2ulanowwwwwqwwww2@gmail.com",
+            password: "123qwe456",
+            name: "SUCRATA",
+            document_id: "2qwqqq",
+            phone: "11999999999",
+            cellphone: "11999999999",
+            address: {
+              address: "R Dr Carlos Alberto Bastos de Matos",
+              number: 2741,
+              postal_code: "14412-290",
+              complement: null,
+              neighborhood: "Franca Pólo Club",
+              city: "Franca",
+              state: "SP",
+              type: "home",
+              default: true
+            }
           }
 
+          
           singUp(payload)
 
           console.log('paypal', payload)

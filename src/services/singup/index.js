@@ -1,13 +1,10 @@
 import api from "../api";
 
-async function setSingUp(email, name, password, document_id) {
+async function setSingUp(payload) {
   return new Promise(async (resolve, reject) => {
     try {
-      const { data } = await api.post(`/users/`, {
-        email,
-        name,
-        password, 
-        document_id
+      const { data } = await api.post(`/users`, {
+        payload
       })
       resolve(data)
     } catch (error) {

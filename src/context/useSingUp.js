@@ -15,11 +15,11 @@ export default function SingUpProvider({ children }) {
 
     console.log('error', error)
     
-    const singUp = (email, name, password, document_id) => {
+    const singUp = (payload) => {
       setLoading(true)
 
       SingUp
-        .setSingUp(email, name, password, document_id)
+        .setSingUp(payload)
         .then(console.log('FUNNFOOO'))
         .catch(setError)
         .finally(() => setLoading(false))
