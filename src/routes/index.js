@@ -27,7 +27,7 @@ export default function Routes() {
       <Route path="/profile" component={Profile} isPrivate />
       <Route path="/registro-de-pacote" component={RegisterPackage} isPrivate />
       <Route path="/metricas" component={Metrics} isPrivate />
-      <Route path="/vendas" component={Sales} isPrivate />
+      <Route path="/vendas" exact component={Sales} isPrivate />
       <Route path="/vendas/detail/:id" component={SalesDetail} isPrivate />
       <Route path="/integracao" component={Integrations} isPrivate />
       <Route path="/financeiro" component={Financial} isPrivate />

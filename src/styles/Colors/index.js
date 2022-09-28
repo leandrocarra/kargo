@@ -32,6 +32,7 @@ export const green_effect_one   = '#00aa10';
 export const green_effect_two   = '#25b533';
 export const green_effect_three = '#009d0f';
 export const green_area         = '#52C41A';
+export const green_fit          = '#00c853'; 
 
 export const purple_rain        = '#5e35b1';
 export const purple_main        = '#ede7f6';

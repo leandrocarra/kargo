@@ -10,6 +10,7 @@ export const BoxContainer = styled.div`
   padding: 30px;
   width: 100%;
   margin-bottom: 30px;
+  overflow: hidden;
   border: 1px solid rgba(144, 202, 249, 0.46);
 `;
 
@@ -27,6 +28,7 @@ export const BoxContainerCenter= styled.div`
   height: 477px;
   top: 50%;
   position: relative;
+  overflow: hidden;
   margin-top: -235px;
   border: 1px solid rgba(144, 202, 249, 0.46);
 `;
