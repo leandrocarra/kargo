@@ -10,7 +10,7 @@ export const FormFullLine = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  input, input[type=text],select {
+  input, input[type=text],select, textarea {
     border-radius: 4px;
     border: 1px solid ${gray_area};
     padding: 10px 15px;
@@ -19,6 +19,12 @@ export const FormFullLine = styled.div`
     box-sizing: border-box;
     width: 100%;
     background-color: transparent;
+  }
+  textarea{
+    min-height: 150px;
+    max-height: 150px;
+    max-width: 100%;
+    min-width: 100%;
   }
   label {
     margin-right: 30px;

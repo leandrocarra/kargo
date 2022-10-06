@@ -4,7 +4,8 @@ import {
   BoxContainer,
   BoxContainerCenter,
   BoxContentTitle,
-  HalfBoxContainer
+  HalfBoxContainer,
+  SmallBoxContainer
 } from './styles';
 
 export default function BoxContent({ title, children }) {
@@ -41,5 +42,13 @@ export function HalfBoxContent({ children }) {
     <HalfBoxContainer> 
       {children}
     </HalfBoxContainer>
+  );
+}
+
+export function SmallBoxContent({ children }) {
+  return (
+    <SmallBoxContainer> 
+      {children}
+    </SmallBoxContainer>
   );
 }

@@ -84,14 +84,14 @@ function Menus() {
         </MenuItem> */}
         <MenuSeparator></MenuSeparator>
         <MenuTitleRefer>Aplicação</MenuTitleRefer>
-        <MenuItem>
+        {/* <MenuItem>
           <MenuIcon><Help /></MenuIcon>
           <MenuTextItem>
             <Link to="/ajuda">
               Ajuda
             </Link>
           </MenuTextItem>
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem>
           <MenuIcon><ContactPhone /></MenuIcon>
           <MenuTextItem>

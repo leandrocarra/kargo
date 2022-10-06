@@ -53,3 +53,17 @@ export const HalfBoxContainer = styled.div`
   float: left;
   border: 1px solid rgba(144, 202, 249, 0.46);
 `;
+
+export const SmallBoxContainer = styled.div`
+  min-height: 100px;
+  min-width: 30px;
+  background-color: ${white};
+  border-radius: 8px;
+  padding: 15px;
+  width: 28%;
+  margin: 0 2%;
+  margin-bottom: 30px;
+  text-align: center;
+  float: left;
+  border: 1px solid rgba(144, 202, 249, 0.46);
+`;
