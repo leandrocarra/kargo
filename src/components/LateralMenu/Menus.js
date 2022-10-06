@@ -48,14 +48,14 @@ function Menus() {
             </Link>
           </MenuTextItem>
         </MenuItem>
-        <MenuItem>
+        {/* <MenuItem>
           <MenuIcon><LocalAtm /></MenuIcon>
           <MenuTextItem>
             <Link to="/financeiro">
               Financeiro
             </Link>
           </MenuTextItem>
-        </MenuItem>
+        </MenuItem> */}
         <MenuSeparator></MenuSeparator>
         <MenuTitleRefer>Widget</MenuTitleRefer>
         <MenuItem>
@@ -74,14 +74,14 @@ function Menus() {
             </Link>
           </MenuTextItem>
         </MenuItem>
-        <MenuItem>
+        {/* <MenuItem>
           <MenuIcon><Assessment /></MenuIcon>
           <MenuTextItem>
             <Link to="/relatorio">
               Relatórios
             </Link>
           </MenuTextItem>
-        </MenuItem>
+        </MenuItem> */}
         <MenuSeparator></MenuSeparator>
         <MenuTitleRefer>Aplicação</MenuTitleRefer>
         <MenuItem>

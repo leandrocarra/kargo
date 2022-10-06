@@ -91,7 +91,8 @@ const DestinyForm = () => {
                   <ErrorMessage component="span" name="name" />
                   <Field name="name" type="text" />
                 </Styles.FormInputContainer>
-              </Styles.FormFullLine>
+            </Styles.FormFullLine>
+            
             <Styles.FormFullLine>
               <Styles.FormLabelContainer>
                 <label><i>*</i>Morada : </label>
@@ -101,6 +102,7 @@ const DestinyForm = () => {
                 <Field name="morada" type="text" />
               </Styles.FormInputContainer>
             </Styles.FormFullLine>
+            
             <Styles.FormFullLine>
               <Styles.FormHalfLine>
                 <Styles.FormLabelContainer>
@@ -121,6 +123,7 @@ const DestinyForm = () => {
                 </Styles.FormInputContainer>
               </Styles.FormHalfLine>
             </Styles.FormFullLine>
+            
             <Styles.FormFullLine>
               <Styles.FormLabelContainer>
                 <label><i>*</i>Email : </label>
@@ -130,6 +133,7 @@ const DestinyForm = () => {
                 <Field name="email" type="text" />
               </Styles.FormInputContainer>
             </Styles.FormFullLine>
+            
             <Styles.FormFullLine>
               <Styles.FormLabelContainer>
                 <label><i>*</i>Localidade : </label>
@@ -139,6 +143,7 @@ const DestinyForm = () => {
                 <Field name="local" type="text" />
               </Styles.FormInputContainer>
             </Styles.FormFullLine>
+            
             <Styles.FormFullLine>
               <Styles.FormHalfLine>
                 <Styles.FormLabelContainer>
@@ -159,6 +164,7 @@ const DestinyForm = () => {
                 </Styles.FormInputContainer>
               </Styles.FormHalfLine>
             </Styles.FormFullLine>
+            
             <Styles.FormTitle>DADOS DO PRODUTO</Styles.FormTitle>
             <Styles.FormFullLine>
               <Styles.FormHalfLine>
@@ -180,6 +186,7 @@ const DestinyForm = () => {
                 </Styles.FormInputContainer>
               </Styles.FormHalfLine>
             </Styles.FormFullLine>
+            
             <Styles.FormFullLine>
               <Styles.FormHalfLine>
                 <Styles.FormLabelContainer>
@@ -211,6 +218,7 @@ const DestinyForm = () => {
                 </Styles.FormSmallLine>
               </Styles.FormHalfLine>
             </Styles.FormFullLine>
+            
             <Styles.FormFullLine>
               <Styles.FormHalfLine>
                 <Styles.FormLabelContainer>
@@ -231,6 +239,7 @@ const DestinyForm = () => {
                 </Styles.FormInputContainer>
               </Styles.FormHalfLine>
             </Styles.FormFullLine>
+            
             <Styles.FormFullLine> 
               <Styles.FormHalfLine>
                 <Styles.FormLabelContainer>
