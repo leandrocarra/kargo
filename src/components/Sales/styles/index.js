@@ -1,10 +1,4 @@
 import styled from 'styled-components';
-import {
-  gray_area,
-  gray_markup,
-  gray_line,
-  white
-} from '../../../styles/Colors';
 
 export const SalesListTitles = styled.div`
   overflow: hidden;

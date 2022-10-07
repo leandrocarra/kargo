@@ -1,13 +1,16 @@
 import React from 'react';
 
-import BoxContent from '~/components/BoxContent';
+import HalfBoxContent from '~/components/BoxContent';
 
 function Integrations() {
   return (
     <>
-      <BoxContent>
+      <HalfBoxContent>
         INTEGRACAO
-      </BoxContent>
+      </HalfBoxContent>
+      <HalfBoxContent>
+        INTEGRACAO
+      </HalfBoxContent>
     </>
   )
 }

@@ -1,10 +1,4 @@
 import styled from 'styled-components';
-import {
-  gray_area,
-  gray_markup,
-  black_text,
-  white
-} from '../../../styles/Colors';
 
 export const RowContainer = styled.div`
   border-bottom: 1px solid;

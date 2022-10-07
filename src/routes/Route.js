@@ -4,7 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 import LayoutDefault  from '~/pages/_layouts/Default';
 import LoginLayout from '~/pages/_layouts/SingIn';
 
-import {store} from '~/store';
+// import {store} from '~/store';
 import CollapseMenusProvider from '~/hooks/useCollapseMenus'
 
 export default function RouteWrapper({

@@ -6,9 +6,9 @@ import BoxContent from '~/components/BoxContent';
 import * as Styles from '../Forms/styles';
 import {ButtonSuccess} from '~/components/Buttons/styles'
 
-import {
-  Container
-} from './styles';
+// import {
+//   Container
+// } from './styles';
 
 
 function Profile() {  

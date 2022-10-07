@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 import IconSeach from '@material-ui/icons/Search';
-import MenuCollaps from '@material-ui/icons/MenuOpen';
+// import MenuCollaps from '@material-ui/icons/MenuOpen';
 import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import PersonIcon from '@material-ui/icons/Person';
 
@@ -14,7 +14,7 @@ import {
 } from './styles';
 
 import { ButtonActionOnlyIcon } from '~/components/Buttons/styles'
-import { useCollapseDesktop } from '~/hooks/useCollapseMenus'
+// import { useCollapseDesktop } from '~/hooks/useCollapseMenus'
 
 const useStyles = makeStyles({
   withBorder: {
@@ -59,7 +59,7 @@ const useStyles = makeStyles({
 
 function Search() {
   const classes = useStyles();
-  const { handleCollapse, collapseInDesktop } = useCollapseDesktop();
+  // const { handleCollapse, collapseInDesktop } = useCollapseDesktop();
   const [hasValue, setHasValue] = useState('');
   const [inFocu, setInFocu] = useState(false);
   
@@ -67,11 +67,11 @@ function Search() {
     setHasValue(event.target.value)
   }
 
-  const handleBtnCollapse = () => {
-    collapseInDesktop
-      ? handleCollapse('openDesktop')
-      : handleCollapse('closeDesktop')
-  }
+  // const handleBtnCollapse = () => {
+  //   collapseInDesktop
+  //     ? handleCollapse('openDesktop')
+  //     : handleCollapse('closeDesktop')
+  // }
 
   return (
     <SearchContainer>

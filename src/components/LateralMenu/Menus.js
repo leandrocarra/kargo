@@ -1,13 +1,13 @@
 import React from 'react';
 
 import {
-  Receipt,
-  ViewList,
-  Assessment,
+  // Receipt,
+  // ViewList,
+  // Assessment,
   AccountBox,
   SyncAlt,
-  LocalAtm,
-  Help,
+  // LocalAtm,
+  // Help,
   ContactPhone,
   LocalOffer,
   Dashboard

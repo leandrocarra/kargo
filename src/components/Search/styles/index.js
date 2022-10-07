@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {gray_area, gray_markup, gray_line, white} from '../../../styles/Colors';
+import {gray_area, gray_line, white} from '../../../styles/Colors';
 
 export const SearchContainer = styled.div`
   background-color: ${white};

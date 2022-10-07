@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import {
   black,
-  yellow_markup,
   black_text,
   gray_step,
   purple_rain,

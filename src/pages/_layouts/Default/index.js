@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Search from '~/components/Search';
 import LateralMenu from '~/components/LateralMenu';
-import Footer from '~/components/Footer';
+// import Footer from '~/components/Footer';
 
 import { WrapperLeft, WrapperRight, ContentArea } from './styles';
 

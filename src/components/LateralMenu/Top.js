@@ -7,7 +7,7 @@ function Top() {
   return (
     <TopWrapper>
       <TopLogo>
-        <img src={Logo} />
+        <img src={Logo} alt="img" />
       </TopLogo>
       
     </TopWrapper>
