@@ -37,10 +37,13 @@ export function BoxContentEmpty({ children }) {
   );
 }
 
-export function HalfBoxContent({ children }) {
+export function HalfBoxContent({ title, children }) {
   return (
     <HalfBoxContainer> 
-      {children}
+      <BoxContentTitle>
+        {title} 
+      </BoxContentTitle>
+        {children}
     </HalfBoxContainer>
   );
 }
