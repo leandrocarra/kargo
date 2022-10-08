@@ -12,17 +12,24 @@ export const IntegrationMain = styled.div`
   input, input[type=text],select, textarea {
     border-radius: 4px;
     border: 1px solid ${gray_area};
-    padding: 10px 15px;
-    outline: 0 none;
-    font-size: 14px;
-    box-sizing: border-box;
-    width: 100%;
-    background-color: transparent;
-    margin-bottom: 30px;
+    padding: 10px 15px;margin-top: 20px;
+    margin-right: 20px;
   }
   label {
     margin-top: 30px;
     display: block;
+    width: 85%;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  i {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
   }
 `;
 
@@ -82,6 +89,7 @@ export const ButtonTracking = styled.div`
   border-radius: 4px;
   color: ${white};
   background-color: ${green_default};
+  margin-top: 30px;
   &:hover {
     background: $color_green_effect_one linear-gradient(180deg,${green_effect_two},${green_effect_one}) repeat-x;
     border-color: ${green_effect_three};
@@ -98,12 +106,35 @@ export const IntegrationListMain = styled.div`
     overflow: hidden;
     border-bottom: 1px solid;
     padding: 30px 0;
-    div {
-      float: left;
-      overflow: hidden;
-      width: 20%;
-      text-align: center;
-    }
   }
 `;
+
+export const IntegrationListFirst = styled.div`
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+`;
+
+export const IntegrationListSecond = styled.div`
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+`;
+
+export const IntegrationListThird = styled.div`
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+`;
+
+export const IntegrationListFourth = styled.div`
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  text-align: center;
+`;
+
 

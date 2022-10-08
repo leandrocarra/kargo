@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { HalfBoxContent } from '~/components/BoxContent';
+import FileCopyIcon from '@material-ui/icons/FileCopy';
 import List from './List';
 import {
   ButtonOption,
@@ -32,6 +33,7 @@ function Integrations() {
         <label>
           https://app.slack.com/client/TACN130GK/C03TTF64230
         </label>
+        <i><FileCopyIcon/></i>
       </HalfBoxContent>
       <List />
     </IntegrationMain>
