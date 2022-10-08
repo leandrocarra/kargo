@@ -5,7 +5,7 @@ import {
   green_default,
   green_effect_one,
   green_effect_two,
-  green_effect_three
+  green_effect_three,
 } from '../../../styles/Colors';
 
 export const IntegrationMain = styled.div`
@@ -104,7 +104,7 @@ export const IntegrationListMain = styled.div`
   };
   li {
     overflow: hidden;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid ${gray_area};
     padding: 30px 0;
   }
 `;

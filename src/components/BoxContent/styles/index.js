@@ -48,7 +48,7 @@ export const HalfBoxContainer = styled.div`
   border-radius: 8px;
   padding: 30px;
   width: 45%;
-  margin: 0 2%;
+  margin: 0 2% 0 0;
   margin-bottom: 30px;
   float: left;
   border: 1px solid rgba(144, 202, 249, 0.46);

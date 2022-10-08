@@ -28,7 +28,6 @@ export const MenuItem = styled.li`
     color: ${purple_rain};
     a {
       color: ${purple_rain};
-      
     }
   }
 `;
