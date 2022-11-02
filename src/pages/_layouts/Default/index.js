@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import Search from '~/components/Search';
+// import Search from '~/components/Search';
 import LateralMenu from '~/components/LateralMenu';
 // import Footer from  // const handleBtnCollapse = () => {
   //   collapseInDesktop
@@ -52,7 +52,7 @@ function LayoutDefault({ children }) {
         <LateralMenu />
       </WrapperLeft>
       <WrapperRight className={classes.right}>
-        <Search />
+        {/* <Search /> */}
         <ContentArea>
           {children}
         </ContentArea>
