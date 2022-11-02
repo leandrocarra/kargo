@@ -18,8 +18,9 @@ function Integrations() {
           <li>
             <IntegrationListFirst>Origem</IntegrationListFirst>
             <IntegrationListSecond>Product Name</IntegrationListSecond>
+            <IntegrationListThird>Serviço</IntegrationListThird>
             <IntegrationListThird>Incluido em</IntegrationListThird>
-            <IntegrationListFourth>Status</IntegrationListFourth>
+            <IntegrationListFourth>Url</IntegrationListFourth>
           </li>
           <li>
             <IntegrationListFirst>HOTMART</IntegrationListFirst>
