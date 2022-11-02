@@ -13,6 +13,15 @@ import {
 function Integrations() {
   return (
     <IntegrationMain>
+      <HalfBoxContent title="GERAR WEBHOOK">
+        <ButtonTracking>
+          Gerar WEBHOOK Taki-Pay
+        </ButtonTracking>
+        <label>
+          https://app.slack.com/client/TACN130GK/C03TTF64230
+        </label>
+        <i><FileCopyIcon/></i>
+      </HalfBoxContent>
       <HalfBoxContent title="INCLUIR WEBHOOK">
         <IntegrationContent>
           <ButtonOption>HOTMART</ButtonOption>
@@ -26,15 +35,7 @@ function Integrations() {
         </ButtonTracking>
 
       </HalfBoxContent>
-      <HalfBoxContent title="GERAR WEBHOOK">
-        <ButtonTracking>
-          Gerar WEBHOOK Taki-Pay
-        </ButtonTracking>
-        <label>
-          https://app.slack.com/client/TACN130GK/C03TTF64230
-        </label>
-        <i><FileCopyIcon/></i>
-      </HalfBoxContent>
+      
       <List />
     </IntegrationMain>
   )
