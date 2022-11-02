@@ -24,9 +24,9 @@ function Integrations() {
       </HalfBoxContent>
       <HalfBoxContent title="INCLUIR WEBHOOK">
         <IntegrationContent>
-          <ButtonOption>HOTMART</ButtonOption>
+          {/* <ButtonOption>HOTMART</ButtonOption>
           <ButtonOption>EDUZZ</ButtonOption>
-          <ButtonOption>OUTRO</ButtonOption>
+          <ButtonOption>OUTRO</ButtonOption> */}
         </IntegrationContent>
         <input type="text" placeholder="Nome Produto"/>
         <input type="text" placeholder="URL"/>
