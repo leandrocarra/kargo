@@ -17,83 +17,17 @@ function Integrations() {
         <ul>
           <li>
             <IntegrationListFirst>Origem</IntegrationListFirst>
-            <IntegrationListSecond>Product Name</IntegrationListSecond>
+            <IntegrationListSecond>Nome do produto</IntegrationListSecond>
             <IntegrationListThird>Serviço</IntegrationListThird>
-            <IntegrationListThird>Incluido em</IntegrationListThird>
-            <IntegrationListFourth>Url</IntegrationListFourth>
+            <IntegrationListFourth>Incluido em</IntegrationListFourth>
+            
           </li>
           <li>
             <IntegrationListFirst>HOTMART</IntegrationListFirst>
             <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
-          <li>
-            <IntegrationListFirst>HOTMART</IntegrationListFirst>
-            <IntegrationListSecond>Lincenciamento IPVA</IntegrationListSecond>
-            <IntegrationListThird>10/10/2020</IntegrationListThird>
-            <IntegrationListFourth>OPERACIONAL</IntegrationListFourth>
-          </li>
+            <IntegrationListThird>Whatsapp</IntegrationListThird>
+            <IntegrationListFourth>10/10/2022</IntegrationListFourth>
+          </li>         
         </ul>
       </IntegrationListMain>
     </BoxContent>

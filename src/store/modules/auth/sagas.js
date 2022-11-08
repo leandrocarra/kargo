@@ -7,27 +7,24 @@ import api from '~/services/api';
 import { signInSuccess, signFailure } from './actions';
 
 export function* signIn({ payload }) {
-
   try {
-    const { user, password } = payload;
+    const { email, password } = payload;
 
-    const response = yield call(api.post, '/login/', {
-      user,
+    const response = yield call(api.post, '/token/', {
+      email,
       password,
     });
+    console.log(response.data);
+    const { access } = response.data;
 
-    const { jwt } = response.data;
-
-    api.defaults.headers={"x-kargo-token": `${jwt}`};
-
-    if ( jwt === undefined) {
+    if ( access === undefined) {
       yield put(signFailure());
     }
-    if (jwt !== undefined ) {
-      yield put(signInSuccess(jwt, user));
+    if (access !== undefined ) {
+      yield put(signInSuccess(access, email));
     }
 
-    history.push('/registro-de-pacote');
+    history.push('/dashboard');
   } catch (err) {
     toast.error('Revise seu email ou senha, parecem estar diferentes');
     yield put(signFailure());
@@ -58,9 +55,6 @@ export function setToken({ payload }) {
 
   const { token } = payload.auth;
 
-  if (token) {
-    api.defaults.headers={"x-kargo-token": `${token}`};
-  }
 }
 
 export function signOut() {
