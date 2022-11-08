@@ -39,8 +39,8 @@ const DestinyForm = () => {
           // }
 
           const payload = {
-            email: "f2ulanoww23ewwwqwwww2@gmail.com",
-            password: "123qwe456",
+            email: "fulano@gmail.com",
+            password: "123456",
             name: "SUCRATA",
             document_id: "2qwqqq",
             phone: "11999999999",
