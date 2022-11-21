@@ -39,10 +39,10 @@ const DestinyForm = () => {
           // }
 
           const payload = {
-            email: "fulano@gmail.com",
+            email: "fulanus@gmail.com",
             password: "123456",
             name: "SUCRATA",
-            document_id: "2qwqqq",
+            document_id: "123",
             phone: "11999999999",
             cellphone: "11999999999",
             address: {
@@ -58,10 +58,7 @@ const DestinyForm = () => {
             }
           }
 
-          
           singUp(payload)
-
-          console.log('paypal', payload)
         }}
       >
         <Form>

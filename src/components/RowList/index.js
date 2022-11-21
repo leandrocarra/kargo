@@ -5,19 +5,29 @@ import {
   RowContainer
 } from './styles';
 
-function RowList({params}) {
+function RowList({
+  protocol,
+  transactionData,
+  payer,
+  productName,
+  originalValue,
+  originalPayed,
+  installments,
+  capturedData,
+  status
+}) {
   return (
-    <Link to={`/vendas/detail/${params.id}`} >
+    <Link to={`/vendas/detail/${protocol}`} >
       <RowContainer>
-        <label>{params.protocolo}</label>
-        <label>{params.comprador}</label>
-        <label>{params.transaction.data}</label>
-        <label>{params.itens}</label>
-        <label>{params.originalValor}</label>
-        <label>{params.originalPayed}</label>
-        <label>{params.parcelas}</label>
-        <label>{params.captured.data}</label>
-        <label>{params.status}</label>
+        <label>{protocol}</label>
+        <label>{payer}</label>
+        <label>{transactionData}</label>
+        <label>{productName}</label>
+        <label>{originalValue}</label>
+        <label>{originalPayed}</label>
+        <label>{installments}</label>
+        <label>{capturedData}</label>
+        <label>{status}</label>
       </RowContainer>
     </Link>
   )
