@@ -14,8 +14,6 @@ export default function SalesProvider({ children }) {
   const [loading, setLoading] = useState(false)
   const [sales, setSales] = useState(null)
 
-    console.log('error', error)
-    
     const getterSales = (payload) => {
       setLoading(true)
 
