@@ -23,7 +23,8 @@ function Sales() {
       {loading && (
         <Loading/>
       )}
-      <BoxContent>
+      {sales && (
+        <BoxContent>
         <SalesListTitles>
           <label>Protocolo</label>
           <label>Comprador</label>
@@ -56,6 +57,8 @@ function Sales() {
           </>
         )}
       </BoxContent>
+      )}
+      
     </>
   )
 }
