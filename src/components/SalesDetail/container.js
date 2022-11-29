@@ -5,14 +5,12 @@ import Loading from '~/components/Loading';
 import {
   SalesDetailContent,
   SalesDetailsSeparator,
-  SalesDetailStatus
 } from './styles';
  
 function SalesDetail() {
   const { 
     loading,
     salesDetail,
-    error
    } = useSalesDetail()
 
    console.log('detail',salesDetail);

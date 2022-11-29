@@ -53,7 +53,7 @@ export function* signUp({ payload }) {
 export function setToken({ payload }) {
   if (!payload) return;
 
-  const { token } = payload.auth;
+  //const { token } = payload.auth;
 
 }
 

@@ -12,7 +12,7 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }) {
-  console.log(store.getState().auth);
+  
   const { signed } = store.getState().auth;
   //const signed  = true;
 

@@ -1,7 +1,8 @@
 import React, {
   createContext,
   useState,
-  useContext
+  useContext,
+  useEffect
  } from "react";
  
 import SingUp from '../services/singup';
@@ -12,16 +13,31 @@ export default function SingUpProvider({ children }) {
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
   const [wasSended, setWasSended] = useState(null)
+  const [temp, setTemp] = useState(null)
 
-    const singUp = (payload) => {
-      setLoading(true)
+  const setTempAccess = () => (
+    localStorage.setItem('tempAccess', JSON.stringify({
+      user: temp.email,
+      pass: temp.password
+    }))
+  )
 
-      SingUp
-        .setSingUp(payload)
-        .then(setWasSended)
-        .catch(setError)
-        .finally(() => setLoading(false))
-    }
+  const singUp = (payload) => {
+    setLoading(true)
+    setTemp(payload)
+
+    SingUp
+      .setSingUp(payload)
+      .then(setWasSended)
+      .catch(setError)
+      .finally(() => setLoading(false))
+  }
+
+  useEffect(() => {
+    wasSended
+      ? setTempAccess()
+      : console.log('')
+  }, [wasSended])
 
   return (
     <SingUpContext.Provider

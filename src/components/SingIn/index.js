@@ -1,68 +1,15 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import SingIn from './container';
 
-import * as Yup from 'yup';
-import { Formik, Field, Form, ErrorMessage } from 'formik';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import SingUpProvider from '~/context/useSingUp';
 
-import { signInRequest } from '~/store/modules/auth/actions';
-import {BoxContentCenter} from '~/components/BoxContent';
-
-import {SingInTitle, SingInSubTitle, SingInContainerButton, SingInWithOutAccess} from './styles';
-import {FormFullLine, FormInputContainerFull} from '~/components/Forms/styles';
-import {ButtonAction} from '~/components/Buttons/styles';
-
-
-function SingIn() {
-  const dispatch = useDispatch();
-  const loading = useSelector(state => state.auth.loading);
+function Login() {
 
   return (
-    <BoxContentCenter>
-      <SingInTitle>PORTAL DO SELLER</SingInTitle>
-      <SingInSubTitle>Bem vindo ao seu painel</SingInSubTitle>   
-      <Formik
-        initialValues={{
-          email: '',
-          password: ''
-        }}
-        validationSchema={Yup.object({
-          email: Yup.string('precisa ser um email valido').required(),
-          password: Yup.string().required(),
-        })}
-        onSubmit={({email, password}) => {
-          dispatch(signInRequest(email, password))
-        }}
-      >
-        <Form>
-          <FormFullLine>
-            <FormInputContainerFull>
-              <ErrorMessage component="span" name="email" />
-              <Field name="email" type="email" placeholder="administrador@exemplo.pt" />
-              <i><MailOutlineIcon/></i>
-            </FormInputContainerFull>
-          </FormFullLine>
-          <FormFullLine>
-            <FormInputContainerFull>
-              <ErrorMessage component="span" name="password" />
-              <Field name="password" type="text" placeholder="*******" />
-              <i><LockOutlinedIcon/></i>
-            </FormInputContainerFull>
-          </FormFullLine>
-          <SingInContainerButton>
-            <ButtonAction type="submit">
-              {loading
-                ? 'Carregando ...'
-                : 'Acessar'
-              }
-            </ButtonAction>
-            <SingInWithOutAccess href="/singup">Quero me cadastrar</SingInWithOutAccess>
-          </SingInContainerButton>
-        </Form>
-      </Formik> 
-    </BoxContentCenter>
-  );
+    <SingUpProvider>
+      <SingIn />
+    </SingUpProvider>
+  )
 }
 
-export default SingIn;
+export default Login;

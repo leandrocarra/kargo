@@ -1,9 +1,9 @@
 import React from 'react';
-
 import Loading from '~/components/Loading';
 import {useSingUp} from '../../../context/useSingUp'
 import * as Yup from 'yup';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
+import { Redirect } from "react-router-dom";
 
 import { BoxContentCenter } from '~/components/BoxContent';
 
@@ -11,11 +11,11 @@ import * as Styles from '../styles';
 import {ButtonSuccess} from '~/components/Buttons/styles'
 
 const DestinyForm = () => {
+
   const {
     loading,
     singUp,
     wasSended,
-    error
    } = useSingUp()
 
   return (
@@ -25,7 +25,10 @@ const DestinyForm = () => {
       )}      
       <BoxContentCenter>
         { wasSended && (
-          <p>CADASTRO REALIZADO</p>
+          <>
+            <p>CADASTRO REALIZADO</p>
+            <Redirect to="/" />
+          </>
         )}
         { wasSended === null && (
           <Formik
@@ -41,7 +44,6 @@ const DestinyForm = () => {
               pass: Yup.string().required(),
             })}
             onSubmit={ async values  => {
-              
               const payload = {
                 name: values.name,
                 email: values.email,
@@ -61,25 +63,6 @@ const DestinyForm = () => {
                   default: true
                 }
               }
-              // const payload = {
-              //   email: "fulanus@gmail.com",
-              //   password: "123456",
-              //   name: "SUCRATA",
-              //   document_id: "123",
-              //   phone: "",
-              //   cellphone: "",
-              //   address: {
-              //     address: "",
-              //     number: "",
-              //     postal_code: "",
-              //     complement: null,
-              //     neighborhood: "",
-              //     city: "",
-              //     state: "",
-              //     type: "",
-              //     default: true
-              //   }
-              console.log(payload);
               singUp(payload)
             }}
           >

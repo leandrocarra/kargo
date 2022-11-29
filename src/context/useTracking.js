@@ -26,16 +26,6 @@ export default function TrackingProvider({ children }) {
         .finally(() => setLoading(false))
     }
 
-    // const getTrackingID = (id) => {
-    //   setLoading(true)
-
-    //   Tracking
-    //     .getTrackingId(id)
-    //     .then(setAllTracking)
-    //     .catch(setError)
-    //     .finally(() => setLoading(false))
-    // }
-
     useEffect(() => {
       getTrackings()
     }, [])

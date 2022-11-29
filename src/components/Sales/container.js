@@ -13,7 +13,6 @@ function Sales() {
   const { 
     loading,
     sales,
-    error
    } = useSales()
 
    console.log(sales);

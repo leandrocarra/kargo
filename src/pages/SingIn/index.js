@@ -1,3 +1,3 @@
-import SingIn from '~/components/SingIn';
+import Login from '~/components/SingIn';
 
-export default SingIn
+export default Login
