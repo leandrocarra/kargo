@@ -123,7 +123,6 @@ export default createGlobalStyle`
   position: relative;
   text-align: center;
   background: linear-gradient(60deg,rgba(84,58,183,1) 0%,rgba(0,172,193,1) 100%);
-  color: white;
   width: 100%;
   height: 100vh;
 }
@@ -146,13 +145,6 @@ export default createGlobalStyle`
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:100px;
   max-height:150px;
-}
-
-.content {
-  position:relative;
-  height:20vh;
-  text-align:center;
-  background-color: white;
 }
 
 /* Animation */
